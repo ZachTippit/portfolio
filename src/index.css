@@ -54,6 +54,12 @@ a{
     align-items: center;
 }
 
+
+.max-width-70{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
 /* ====== Fonts and Text ====== */
 
 .white-text{
@@ -119,10 +125,6 @@ p {
     line-height: 160%;
     font-size: 24px;
     margin-bottom: 4vh;
-}
-
-.fixed{
-    position: fixed;
 }
 
 /* ====== Hover States ====== */
@@ -279,7 +281,27 @@ p {
     object-fit: scale-down;
 }
 
-.max-width-70{
-    max-width: 70%;
-    margin: 0 auto;
+/* ====== Contact ====== */
+
+.links a {
+	display: block;
+    margin: 4vh 0;
+    font-family: effra, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+	font-size: 19px;
+    line-height: 170%;
+}
+
+.label-email:after{
+    content:"zachary.tippit@gmail.com";
+}
+.label-email:hover:after{
+	content:"Copy to Clipboard";
+}
+
+/* ====== Projects ====== */
+
+.project{
+    margin-top: 5vh;
 }

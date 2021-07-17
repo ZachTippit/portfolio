@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/qhq5cnx.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Zach Tippit</title>
+</head>
+<body class='black-background'>
+    <div class = 'block-image-overflow'>
+        <div class='max-width'>
+            <div class='top-bottom-margin'>
+                <div class='hide-text-block'>
+                    <h2 class='white-text animate'>
+                        Let's work together!
+                    </h2>
+                </div>
+                <div class='white-text max-width-70 animate'>
+                    <h4>Contact</h4>
+                    <p>I'm seeking opportunities to work with companies/agencies/individuals in a web/software development capacity. I can't wait to bring my collective experiences into the realm of coding and digital creation.</p>
+                    <p>As a collaboration-minded individual with a HUNGER for knowledge, I am chomping at the bit to begin this journey. If that sounds like the type of dev you want on your team, let's chat!</p>
+                    <p>Feel free to reach out through any platforms below:</p>
+                    <div class='links'>
+                        <a class='on-hover-40 red-text'>
+                            <div class='label-email copy-email'></div>
+                            <div style='display: none;'>Copy to Clipboard</div>
+                            <script src="../node_modules/clipboard/dist/clipboard.min.js"></script>
+                            <script>
+                                var clipboard = new ClipboardJS('.copy-email', {
+                                    text: function() {
+                                        return 'zachary.tippit@gmail.com'
+                                    }
+                                });
+
+                                clipboard.on('success', function (e) {
+                                    console.log(e);
+                                });
+
+                                clipboard.on('error', function (e) {
+                                    console.log(e);
+                                });
+                            </script>
+                        </a>
+                        <a class='on-hover-40 red-text' href='https://github.com/ZachTippit'>Github</a>
+                        <a class='on-hover-40 red-text' href='https://www.linkedin.com/in/zachtippit/'>LinkedIn</a>
+                        <a class='on-hover-40 red-text' href='https://www.instagram.com/zach_tippit/'>Instagram</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
