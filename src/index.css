@@ -1,0 +1,285 @@
+/* ====== General ====== */
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    padding:0;
+    margin:0;
+	font-size: calc(1em + 1vw);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none !important;
+}
+
+.black-background {
+    background: #000000;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.vertical-center {
+    position: absolute;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* ====== Fonts and Text ====== */
+
+.white-text{
+    color: white;
+}
+
+.red-text{
+    color: red;
+}
+
+.hide-text-block {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: effra, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	position: fixed;
+	line-height: 110%;
+	letter-spacing: -2px;
+    font-size: 3.2em; /* general fallback */
+    font-size: 18vm; /* IE9 fallback */
+/*     font-size: 19vmin; */
+    font-size: 18vmin;
+
+}
+		@media screen and (max-width: 767px) {
+			h1 {
+			line-height: 130%;
+			}
+		}
+h2{
+    font-family: effra, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	line-height: 110%;
+	letter-spacing: -2px;
+    font-size: 6em; /* general fallback */
+    font-size: 12vm; /* IE9 fallback */
+}
+
+h4{
+    font-family: effra, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 140%;
+    font-size: 40px;
+    margin: 24vh 0 4vh 0;
+}
+
+p {
+    font-family: effra, sans-serif;
+    font-style: normal;
+    line-height: 170%;
+    font-size: 18px;
+    margin-bottom: 3vh;
+}
+
+.large-text{
+    line-height: 160%;
+    font-size: 24px;
+    margin-bottom: 4vh;
+}
+
+.fixed{
+    position: fixed;
+}
+
+/* ====== Hover States ====== */
+
+.on-hover-40, .on-hover--40 {
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.on-hover-40:hover {
+	margin-left: 40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+.on-hover--40:hover {
+	margin-left: -40px;
+	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);	
+}
+
+@media screen and (max-width: 767px) {
+    .on-hover-40:hover {
+        margin-left: 0px;	
+    }
+    .on-hover--40:hover {
+        margin-left: 0px;
+    }	
+}
+
+/* ====== Homepage ====== */
+
+.max-width {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.label-hello:after{
+    content:"Hello.";
+}
+.label-hello:hover:after{
+	content:"About";
+}
+.label-projects:after{
+    content:"I am";
+}
+.label-projects:hover:after{
+	content:"Projects";
+}
+.label-contact:after{
+    content:"Zach";
+}
+.label-contact:hover:after{
+	content:"Contact";
+}
+
+.animate{
+    -webkit-animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -moz-animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(30vh);}
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+
+@media screen and (max-width: 767px){
+    .hide-web {
+        display: none;
+    }
+
+    .toggle-mobile-second {
+        display: none;
+    }
+
+    .max-width {
+        max-width: 100%;
+        max-width: 86%;
+    }
+}
+
+/* ====== Background Photo ====== */
+
+.bg-photo {	
+	z-index: -9;	
+	position: fixed;
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 35%;
+	background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0) 100%), url(./img/profile3.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	 background-size: cover;
+	
+	-webkit-animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
+	-moz-animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
+	animation:bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);	
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+	@media screen and (max-width: 767px) {
+		.bg-photo {
+		-webkit-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+		-moz-animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);
+		animation:bg-photo .6s cubic-bezier(.5, .6, .6, 1);		
+		}
+	}
+@-webkit-keyframes bg-photo {
+	0% {opacity: 0;transform: scale(1.1);}
+	100% {opacity: 1;transform: scale(1);}	
+}
+
+@keyframes bg-photo {
+	0% {opacity: 0;transform: scale(1.1);}
+	100% {opacity: 1;transform: scale(1);}	
+}
+		@media screen and (max-width:480px) {
+			.bg-photo {
+				left: -8%;
+			}	
+		}
+
+
+/* ====== About Page ====== */
+
+.block-image-overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.top-bottom-margin{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.about-image{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 30vh 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: scale-down;
+}
+
+.max-width-70{
+    max-width: 70%;
+    margin: 0 auto;
+}
