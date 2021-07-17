@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/qhq5cnx.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Zach Tippit</title>
 </head>
 <body class='black-background'>
     <div class = 'block-image-overflow'>
         <div class='max-width'>
+            <div class="home-btn">
+                <div class='home-btn-inner'>
+                    <a href="./index.html">
+                        <div class='animate white-text label-home-btn'></div>
+                        <div class='animate white-text' style='display: none;'>tippit.works</div>
+                    </a>
+                </div>
+            </div>
             <div class='top-bottom-margin'>
                 <div class='hide-text-block'>
                     <h2 class='white-text animate'>
@@ -26,7 +34,7 @@
                         <a class='on-hover-40 red-text'>
                             <div class='label-email copy-email'></div>
                             <div style='display: none;'>Copy to Clipboard</div>
-                            <script src="../node_modules/clipboard/dist/clipboard.min.js"></script>
+                            <script src="../../node_modules/clipboard/dist/clipboard.min.js"></script>
                             <script>
                                 var clipboard = new ClipboardJS('.copy-email', {
                                     text: function() {
