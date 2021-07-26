@@ -430,11 +430,15 @@ p {
 	0% {opacity: 0;transform: scale(1.1);}
 	100% {opacity: 1;transform: scale(1);}	
 }
-		@media screen and (max-width:480px) {
-			.bg-photo {
-				left: -8%;
-			}	
-		}
+
+@media screen and (max-width:480px) {
+    .about-photo {
+        background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 10%, rgba(0,0,0,0) 100%), url(../img/about-1.png);
+        width: 120%;
+        height: 100vh;
+        margin-left: -10%;
+    }	
+}
 
 /* ====== Contact ====== */
 
